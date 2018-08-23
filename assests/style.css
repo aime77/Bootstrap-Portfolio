@@ -1,0 +1,7 @@
+nav ul li:hover{
+    background-color: #399077;
+}
+
+nav ul li:active{
+    background-color: #45a049;
+}
