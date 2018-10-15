@@ -47,9 +47,9 @@ nav ul li:active{
     background-color: #45a049;
 }
 
-li a {
-    text-decoration:none;
- }
+input{
+  color:white;
+}
       
   .ml3 {
     font-weight: 700;
@@ -336,11 +336,11 @@ li a {
   }
   
   .cd-fixed-bg.cd-fixed-bg--2 {
-    background-image: url("../images/facerock.jpeg");
+    background-image: url("../images/faceRock.jpg");
   }
   
   .cd-fixed-bg.cd-fixed-bg--3 {
-    background-image: url("../images/womanface.jpeg");
+    background-image: url("../images/womanRock.jpg");
   }
   
   .cd-fixed-bg.cd-fixed-bg--4 {
