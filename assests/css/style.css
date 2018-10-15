@@ -6,8 +6,10 @@ body{
 
 nav{
     background:lightskyblue;
-    color: blue;
+}
 
+.page-footer{
+    background:lightskyblue;
 }
 
 nav ul li:hover{
@@ -18,7 +20,9 @@ nav ul li:active{
     background-color: #45a049;
 }
 
-
+li a {
+    text-decoration:none;
+ }
       
   .ml3 {
     font-weight: 900;
@@ -49,8 +53,7 @@ nav ul li:active{
     position: relative;
     text-align: center;
     cursor: default;
-    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+    background: #42b078;
   }
   
   .hovereffect .overlay {
@@ -60,65 +63,69 @@ nav ul li:active{
     overflow: hidden;
     top: 0;
     left: 0;
-    padding: 3em;
-    text-align: left;
+    padding: 50px 20px;
   }
   
-  .hovereffect img {
+  .hovereffect iframe {
     display: block;
     position: relative;
     max-width: none;
-    width: calc(100% + 60px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-    transition: opacity 0.35s, transform 0.45s;
-    -webkit-transform: translate3d(-40px,0,0);
-    transform: translate3d(-40px,0,0);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .hovereffect:hover iframe {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   }
   
   .hovereffect h2 {
     text-transform: uppercase;
     color: #fff;
+    text-align: center;
     position: relative;
     font-size: 17px;
+    overflow: hidden;
+    padding: 0.5em 0;
     background-color: transparent;
-    padding: 15% 0 10px 0;
-    text-align: left;
   }
   
-  .hovereffect .overlay:before {
+  .hovereffect h2:after {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-    border: 1px solid #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
     content: '';
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-    transition: opacity 0.35s, transform 0.45s;
-    -webkit-transform: translate3d(-20px,0,0);
-    transform: translate3d(-20px,0,0);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+  
+  .hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   }
   
   .hovereffect a, .hovereffect p {
     color: #FFF;
     opacity: 0;
     filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-    transition: opacity 0.35s, transform 0.45s;
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
   }
   
-  .hovereffect:hover img {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  
-  .hovereffect:hover .overlay:before,
   .hovereffect:hover a, .hovereffect:hover p {
     opacity: 1;
     filter: alpha(opacity=100);
