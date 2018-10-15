@@ -18,9 +18,7 @@ nav ul li:active{
     background-color: #45a049;
 }
 
-  main {
-    flex: 1 0 auto;
-  }
+
       
   .ml3 {
     font-weight: 900;
@@ -38,7 +36,7 @@ nav ul li:active{
     float:left;
 }
 #picture{
-    width: 15rem;
+    width: 12rem;
     margin-left:150px;
 
 }
